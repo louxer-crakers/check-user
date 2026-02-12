@@ -3,10 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd user-registration-app && npm install
+        - cd user-registration-app
+        - npm install
     build:
       commands:
-        - cd user-registration-app && npm run build
+        - cd user-registration-app
+        - npm run build
   artifacts:
     baseDirectory: user-registration-app/build
     files:
