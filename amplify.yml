@@ -7,7 +7,6 @@ frontend:
         - npm install
     build:
       commands:
-        - cd user-registration-app
         - npm run build
   artifacts:
     baseDirectory: user-registration-app/build
