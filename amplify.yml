@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd user-registration-app && npm install
+    build:
+      commands:
+        - cd user-registration-app && npm run build
+  artifacts:
+    baseDirectory: user-registration-app/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - user-registration-app/node_modules/**/* 
